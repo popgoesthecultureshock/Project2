@@ -1,22 +1,23 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Tsukimi Rounded', sans-serif;
   grid-template-areas: 
   "nav"
   "main"
 }
 
 a {
-  color: #000000;
+  color: #ffffff;
 }
 
 body > nav {
+  font: 14px;
   grid-area: nav;
-  background-color: #B8C0C2;
+  background-image: url('../images/StarryCloudyBG.jpeg');
+  background-position: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px 0 30px;
+  padding: 0;
 }
 
 nav > a {
@@ -28,11 +29,26 @@ nav > a {
 
 nav > a:hover:not(.active) {
   color: white;
-  background-color: #424748;
+  background-image: url('../images/StarryCloudyBG.jpeg');
+  background-position: 40% 40%;
 }
 
 nav > a.active {
   color: white;
-  cursor: default;
+  cursor:crosshair;
 }
 
+#dreamingText {
+  display: flex;
+  font-family: 'Tsukimi Rounded', sans-serif;
+  flex-direction: row;
+  font-size: 3vmin;
+  justify-content: space-between;
+}
+
+#homeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
