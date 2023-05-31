@@ -1,16 +1,16 @@
 <%- include('../partials/header') %>
 
-  <form id="add-dream-form" method="POST" action="/users/profile">
+  <form id="add-dream-form" method="POST" action="/dreams">
     <label>go</label>
-    <input id="dreamInput" type="text" placeholder="don't think" spellcheck="true"><br>
-    <select name="dreamScale" id="dreamScale">
+    <input name="content" id="dreamInput" type="text" placeholder="don't think" spellcheck="true"><br>
+    <select name="scale" id="dreamScale">
       <option value="Normal">Normal</option>
       <option value="Day">Day</option>
       <option value="Lucid">Lucid</option>
       <option value="False-Awakening">False Awakening</option>
       <option value="Nightmare">Nightmare</option>
     </select><br>
-    <input id="addDate" type="date"><br>
+    <input name="date" id="addDate" type="date"><br>
     <input id="addButton" type="submit" value="Add Dream">
   </form>
 

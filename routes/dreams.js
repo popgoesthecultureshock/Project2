@@ -6,5 +6,7 @@ const dreamsCtrl = require('../controllers/dreams')
 router.get('/new', dreamsCtrl.new)
 //GET /dreams
 router.get('/', dreamsCtrl.index)
+//POST ppost dreams to profile
+router.post('/', dreamsCtrl.createDream)
 
 module.exports = router
