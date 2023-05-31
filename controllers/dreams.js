@@ -18,11 +18,11 @@ const newDream = (req, res) => {
 const createDream = async (req, res) => {
   try {
     const dream = await Dream.create(req.body)
-    const person = req.user._id
+    const person = req.user.id
     const user = await User.findById(person)
     user.dreams.push(dream._id)
     user.save()
-    res.redirect(`/dreams/`)
+    res.redirect(`/dreams/profile`)
   } catch (err) {
     console.log(err)
     res.render('dreams/new', { errorMsg: err.message })
