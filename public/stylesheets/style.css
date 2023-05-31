@@ -47,6 +47,19 @@ nav > a.active {
   padding-top: 0;
 }
 
+/* .tallest {
+  transform: scaleY(6);
+}
+
+.taller {
+  transform: scaleY(4);
+}
+
+.tall {
+
+  transform: scaleY(2);
+} */
+
 #actualButton {
   display: flex;
   align-items: center;
