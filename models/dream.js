@@ -1,6 +1,16 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
+const noteSchema = new Schema(
+  {
+    content: String,
+    updated: Date
+  },
+  {
+    timestamps: true
+  }
+)
+
 const dreamSchema = new Schema(
   {
     content: {
@@ -11,7 +21,8 @@ const dreamSchema = new Schema(
     scale: {
       type: String,
       enum: ['Normal', 'Day', 'Lucid', 'False Awakening', 'Nightmare']
-    }
+    },
+    notes: [noteSchema]
   },
   {
     timestamps: true

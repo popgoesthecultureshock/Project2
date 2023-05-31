@@ -6,10 +6,13 @@ const index = async (req, res) => {
 }
 
 const newDream = (req, res) => {
-  res.render('dreams/new', { title: 'Add Dream', errorMsg: '' })
+  res.render('dreams/new', { title: 'Add Dream' }).catch((err) => {
+    res.redirect('/index')
+    console.log(err, 'newDream Controller Not Working')
+  })
 }
 
 module.exports = {
   index,
-  newDream
+  new: newDream
 }

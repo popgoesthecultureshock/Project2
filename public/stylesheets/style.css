@@ -12,7 +12,8 @@ a {
 body > nav {
   font: 14px;
   grid-area: nav;
-  background-image: url('../images/StarryCloudyBG.jpeg');
+  /* background-image: url('../images/StarryCloudyBG.jpeg'); */
+  background-color: grey;
   background-position: center;
   display: flex;
   justify-content: space-between;
@@ -35,7 +36,6 @@ nav > a:hover:not(.active) {
 
 nav > a.active {
   color: white;
-  cursor:crosshair;
 }
 
 #dreamingText {
@@ -44,11 +44,49 @@ nav > a.active {
   flex-direction: row;
   font-size: 3vmin;
   justify-content: space-between;
+  padding-top: 0;
 }
 
-#homeButton {
+#actualButton {
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  top: 50%;
+  margin: auto;
+  padding: 5vmin 12vmin;
+  font-family: 'Tsukimi Rounded', sans-serif;
+  font-size: 3vmin;
+}
+
+.homeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 15vmin;
+}
+
+#add-dream-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Tsukimi Rounded', sans-serif;
+}
+
+#dreamInput {
+  font-family: 'Tsukimi Rounded', sans-serif;
+}
+
+#addButton {
+  font-family: 'Tsukimi Rounded', sans-serif;
+}
+
+#addDate {
+  font-family: 'Tsukimi Rounded', sans-serif;
+}
+
+#dreamScale {
+  font-family: 'Tsukimi Rounded', sans-serif;
 }

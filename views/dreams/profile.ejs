@@ -1,0 +1,90 @@
+<%- include('../partials/header') %>
+
+  <section id="user-profile-page">
+    <div>
+      <!-- <%= user.birthday %> -->
+    </div>
+    <div>
+      <img alt="avatar" src="<%= user.avatar %>" referrerpolicy="no-referrer">
+    </div>
+    <div>
+      <!-- <%= user.(const sign=()=> {
+        if {
+        birthday === (03/21-04/19)
+        return 'Aries';
+        } else if {
+        birthday === (04/20-05/20)
+        return 'Taurus';
+        } else if {
+        birthday === (05/21-06/20)
+        return 'Gemini';
+        } else if {
+        birthday === (06/21-07/22)
+        return 'Cancer';
+        } else if {
+        birthday === (07/23-08/22)
+        return 'Leo';
+        } else if {
+        birthday === (08/23-09/22)
+        return 'Virgo';
+        } else if {
+        birthday === (09/23-10/22)
+        return 'Libra';
+        } else if {
+        birthday === (10/23-11/21)
+        return 'Scorpio';
+        } else if {
+        birthday === (11/22-12/21)
+        return 'Sagittarius';
+        } else if {
+        birthday === (12/22-01/19)
+        return 'Capricorn';
+        } else if {
+        birthday === (01/20-02/18)
+        return 'Aquarius';
+        } else if {
+        birthday === (02/19-03/20)
+        return 'Pisces';
+        }
+        }) %> -->
+    </div>
+    <div>
+      <%= user.name %>
+    </div>
+
+  </section>
+  <h2>DREAMS:</h2>
+  <!-- <% if (user.dreams) { %> -->
+  <table>
+    <thead>
+      <tr>
+        <th>Content</th>
+        <th>Date</th>
+        <th>Scale</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Yep, we can define variables! -->
+      <!-- <% user.dreams.forEach(function(d) { %> -->
+      <tr>
+        <!-- .toLocaleDateString() provides a more friendly date format -->
+        <td>
+          <!-- <% if (user?._id.equals(d.user._id)) { %> -->
+          <form action="/notes/<%= d._id %>?_method=DELETE" method="POST">
+            <button type="submit">X</button>
+          </form>
+          <!-- <% } %> -->
+        </td>
+      </tr>
+      <!-- <% }); %> -->
+      <!-- Add a row to display the avg AFTER the forEach iteration  -->
+
+    </tbody>
+  </table>
+  <!-- <% } else { %> -->
+  <h5>No Dreams Yet</h5>
+  <!-- <% } %> -->
+
+
+  <%- include('../partials/footer') %>

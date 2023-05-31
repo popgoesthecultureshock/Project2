@@ -17,14 +17,14 @@
 <body>
   <nav>
     <img src="">
-    <a href="/dreams" <%- title==='All Movies' ? 'class="active"' : '' %>>I JUST WOKE UP!!!</a>
-
-    <a href="/performers/new" <%- title==='Add Performer' ? 'class="active"' : '' %>>
-      PROFILE</a>
-    <a href="/logout">LOG OUT</a>
-
-    <a href="/auth/google" class="login">LOG IN&nbsp;<img src=""></a>
-
+    <a href="/dreams/new" <%- title==='All Movies' ? 'class="active"' : '' %>>I JUST WOKE UP!!!</a>
+    <% if (user) { %>
+      <a href="/users/profile">
+        PROFILE</a>
+      <a href="/logout">LOG OUT</a>
+      <% } else { %>
+        <a href="/auth/google" class="login">LOG IN&nbsp;<img src=""></a>
+        <% } %>
   </nav>
   <main>
     <div id="dreamingText">

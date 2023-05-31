@@ -6,7 +6,8 @@ const userSchema = new Schema(
     name: String,
     googleId: { type: String, required: true },
     avatar: String,
-    birthday: Date
+    birthday: Date,
+    dreams: [{ type: Schema.Types.ObjectId, ref: 'Dream' }]
   },
   {
     timestamps: true
