@@ -1,7 +1,22 @@
 <%- include('../partials/header') %>
 
   <section id="dreamPage">
-    <%= dream.content %>
+    <div class="dreamLayout">
+      <div class="showHeader">
+        <div>
+          <%= dream.scale %>
+        </div> | <div>
+          <%= dream.date %>
+        </div>
+      </div>
+      <br>
+      <div>
+        <%= dream.content %>
+      </div>
+      <br>
+      <input name="content" id="noteInput" type="text" method="POST"
+        action="/dreams/details/<% dream._id %>"><button>Notate</button>
+    </div>
   </section>
 
   <%- include('../partials/footer') %>
