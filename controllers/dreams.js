@@ -18,19 +18,33 @@ const newDream = (req, res) => {
 const createDream = async (req, res) => {
   try {
     const dream = await Dream.create(req.body)
-    const person = req.user.id
+    const person = req.user._id
     const user = await User.findById(person)
     user.dreams.push(dream._id)
     user.save()
-    res.redirect(`/dreams/profile`)
+    res.redirect('/users/profile')
   } catch (err) {
     console.log(err)
     res.render('dreams/new', { errorMsg: err.message })
   }
 }
 
+const deleteDream = async (req, res) => {
+  await Dream.findByIdAndDelete(req.params.id)
+  res.redirect('/users/profile')
+}
+
+const showDream = async (req, res) => {
+  //GET Dream from DB
+  let dream = await Dream.findById(req.params.id)
+  //Render the page
+  res.render('dreams/show', { dream })
+}
+
 module.exports = {
   index,
   new: newDream,
-  createDream
+  createDream,
+  deleteDream,
+  showDream
 }

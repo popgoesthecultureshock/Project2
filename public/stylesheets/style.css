@@ -48,16 +48,19 @@ nav > a.active {
 }
 
 /* .tallest {
-  transform: scaleY(6);
-}
-
-.taller {
   transform: scaleY(4);
+  margin-top: 14px;
 }
-
+.taller {
+  transform: scaleY(3);
+  margin-top: 10px;
+}
 .tall {
-
   transform: scaleY(2);
+  margin-top: 4px;
+}
+.normal {
+  margin-top: -7px;
 } */
 
 #actualButton {
@@ -102,4 +105,20 @@ nav > a.active {
 
 #dreamScale {
   font-family: 'Tsukimi Rounded', sans-serif;
+}
+
+.avatar, .name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* .dreamsTable {
+
+} */
+
+#profileDreams {
+  font-size: 3vmin;
+  letter-spacing: 5vmin;
 }

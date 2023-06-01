@@ -9,4 +9,6 @@ router.get('/', dreamsCtrl.index)
 //POST ppost dreams to profile
 router.post('/', dreamsCtrl.createDream)
 
+router.delete('/:id', dreamsCtrl.deleteDream)
+
 module.exports = router

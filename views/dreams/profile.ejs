@@ -5,42 +5,53 @@
       <!-- <%= user.birthday %> -->
     </div>
     <div>
-      <img id="avatar" src="<%= user.avatar %>" referrerpolicy="no-referrer">
+      <img class="avatar" src="<%= user.avatar %>" referrerpolicy="no-referrer">
     </div>
     <div>
 
     </div>
-    <div>
+    <div class="name">
       <%= user.name %>
     </div>
 
   </section>
-  <h2>DREAMS:</h2>
+  <h2 id="profileDreams">DREAMS:</h2>
 
-  <table>
+  <table class="dreamsTable">
     <thead>
       <tr>
         <th>Content</th>
         <th>Date</th>
         <th>Scale</th>
-        <th></th>
+        <th>Delete</th>
       </tr>
     </thead>
-    <tbody>
-      <!-- Yep, we can define variables! -->
-      <tr>
-        <td>
+    <div>
+      <tbody>
+        <% user.dreams.forEach(function(d) { %>
+          <tr>
+            <a href="/dreams/<%= d._id %>?method=GET">
+              <td>
+                <%= d.content %>
+              </td>
+              <td>
+                <%= d.date %>
+              </td>
+              <td>
+                <%= d.scale %>
+              </td>
+            </a>
+            <td>
+              <form action="/dreams/<%= d._id %>?_method=DELETE" method="POST"><button type="submit">X</button></form>
+            </td>
+          </tr>
 
 
-          <button type="submit">X</button>
-          </form>
+          <% }) %>
+            <!-- Add a row to display the avg AFTER the forEach iteration  -->
 
-        </td>
-      </tr>
-
-      <!-- Add a row to display the avg AFTER the forEach iteration  -->
-
-    </tbody>
+      </tbody>
+    </div>
   </table>
 
   <h5>No Dreams Yet</h5>
