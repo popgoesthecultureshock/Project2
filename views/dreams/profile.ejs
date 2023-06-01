@@ -1,46 +1,49 @@
 <%- include('../partials/header') %>
 
   <section id="user-profile-page">
-    <div>
-      <!-- <%= user.birthday %> -->
-    </div>
-    <div>
-      <img class="avatar" src="<%= user.avatar %>" referrerpolicy="no-referrer">
-    </div>
-    <div>
+    <div class="profileHeader">
+      <div>
+        <!-- <%= user.birthday %> -->
+      </div>
+      <div>
+        <img class="avatar" src="<%= user.avatar %>" referrerpolicy="no-referrer">
+      </div>
+      <div>
 
+      </div>
     </div>
     <div class="name">
       <%= user.name %>
     </div>
-
   </section>
   <h2 id="profileDreams">DREAMS:</h2>
 
   <table class="dreamsTable">
     <thead>
       <tr>
+        <th>Details</th>
         <th>Content</th>
         <th>Date</th>
         <th>Scale</th>
         <th>Delete</th>
       </tr>
-    </thead>
+    </thead><br>
     <div>
       <tbody>
         <% user.dreams.forEach(function(d) { %>
           <tr>
-            <a href="/dreams/<%= d._id %>?method=GET">
-              <td>
-                <%= d.content %>
-              </td>
-              <td>
-                <%= d.date %>
-              </td>
-              <td>
-                <%= d.scale %>
-              </td>
-            </a>
+            <form action="/dreams/details/<%= d._id %>" method="GET">
+              <td><button type="submit">VIEW</button></td>
+            </form>
+            <td>
+              <%= d.content %>
+            </td>
+            <td>
+              <%= d.date %>
+            </td>
+            <td>
+              <%= d.scale %>
+            </td>
             <td>
               <form action="/dreams/<%= d._id %>?_method=DELETE" method="POST"><button type="submit">X</button></form>
             </td>
@@ -53,9 +56,9 @@
       </tbody>
     </div>
   </table>
-
-  <h5>No Dreams Yet</h5>
-
+  <!-- <% if(user.dreams==='null' || 'undefined' %>
+    <h5>No Dreams Yet</h5>
+    <% ) %> -->
 
 
   <%- include('../partials/footer') %>
