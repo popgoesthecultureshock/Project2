@@ -30,13 +30,15 @@
         <th>Delete</th>
       </tr>
       <% user.dreams.forEach(function(d) { %>
-        <tr>
+        <tr class="contentDream">
           <form action="/dreams/details/<%= d._id %>" method="GET">
             <td><button type="submit">VIEW</button></td>
           </form>
-          <td>
-            <%= d.content %>
-          </td>
+          <div>
+            <td>
+              <%= d.content %>
+            </td>
+          </div>
           <td>
             <%= d.date %>
           </td>

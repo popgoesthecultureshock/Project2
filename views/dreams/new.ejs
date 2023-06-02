@@ -3,14 +3,15 @@
   <form id="add-dream-form" method="POST" action="/dreams">
     <label id="go">go</label>
     <input name="content" id="dreamInput" type="text" placeholder="don't think" spellcheck="true"><br>
+    <label>dream scale</label>
     <select name="scale" id="dreamScale">
-      <label>dream scale</label>
       <option value="Normal Night">Normal Night</option>
       <option value="Day Dream">Day Dream</option>
       <option value="Lucid Dream">Lucid Dream</option>
       <option value="False-Awakening">False Awakening</option>
       <option value="Nightmare">Nightmare</option>
     </select><br>
+    <label>date</label>
     <input name="date" id="addDate" type="date"><br>
     <input id="addButton" type="submit" value="Add Dream">
   </form>

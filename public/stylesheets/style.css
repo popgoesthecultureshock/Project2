@@ -1,15 +1,22 @@
+/* element.style {
+  mix-blend-mode: difference;
+  color:#fff;
+} */
+
+/* html {
+  
+  mix-blend-mode: difference;
+  color:#000000;
+} */
+
 body {
   font-family: 'Tsukimi Rounded', sans-serif;
   background-image: url('../images/StarryCloudyBgEDITED.jpeg');
   background-size: 100%;
   background-repeat: none;
   background-attachment: fixed;
-  /* background-image: url('../images/BG.png');
-  background-size:120vmin;
-  background-position: 50% 10%; */
-  grid-template-areas: 
-  "nav"
-  "main"
+  mix-blend-mode: difference;
+  color:#fff;
 }
 
 a {
@@ -19,7 +26,6 @@ a {
 
 body > nav {
   font: 14px;
-  grid-area: nav;
   background-image: url('../images/StarryCloudyBG.jpeg');
   background-color: grey;
   /* background-position: center; */
@@ -174,7 +180,9 @@ button :hover{
   color:#fff;
 
 }
-
+h2 {
+  display: flex;
+}
 #profileDreams {
   display: flex;
   justify-content: space-around;
@@ -201,6 +209,10 @@ button :hover{
   text-align: center;
   mix-blend-mode: difference;
   color:#fff;
+}
+
+.contentDream {
+  max-height: 10px
 }
 
 /* I got the inverted color feature from reading this site: https://www.sitepoint.com/community/t/invert-color-text/365494/5 */
