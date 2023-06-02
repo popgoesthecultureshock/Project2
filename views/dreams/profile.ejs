@@ -21,7 +21,7 @@
     <div></div>
   </div>
   <table class="dreamsTable">
-    <thead>
+    <tbody>
       <tr>
         <th>Details</th>
         <th>Content</th>
@@ -29,34 +29,30 @@
         <th>Scale</th>
         <th>Delete</th>
       </tr>
-    </thead><br>
-    <div>
-      <tbody>
-        <% user.dreams.forEach(function(d) { %>
-          <tr>
-            <form action="/dreams/details/<%= d._id %>" method="GET">
-              <td><button type="submit">VIEW</button></td>
-            </form>
-            <td>
-              <%= d.content %>
-            </td>
-            <td>
-              <%= d.date %>
-            </td>
-            <td>
-              <%= d.scale %>
-            </td>
-            <td>
-              <form action="/dreams/<%= d._id %>?_method=DELETE" method="POST"><button type="submit">X</button></form>
-            </td>
-          </tr>
+      <% user.dreams.forEach(function(d) { %>
+        <tr>
+          <form action="/dreams/details/<%= d._id %>" method="GET">
+            <td><button type="submit">VIEW</button></td>
+          </form>
+          <td>
+            <%= d.content %>
+          </td>
+          <td>
+            <%= d.date %>
+          </td>
+          <td>
+            <%= d.scale %>
+          </td>
+          <td>
+            <form action="/dreams/<%= d._id %>?_method=DELETE" method="POST"><button type="submit">X</button></form>
+          </td>
+        </tr>
 
 
-          <% }) %>
-            <!-- Add a row to display the avg AFTER the forEach iteration  -->
+        <% }) %>
+          <!-- Add a row to display the avg AFTER the forEach iteration  -->
 
-      </tbody>
-    </div>
+    </tbody>
   </table>
 
 

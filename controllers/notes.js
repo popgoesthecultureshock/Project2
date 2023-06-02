@@ -13,7 +13,7 @@ const createNote = async (req, res) => {
     console.log(err)
   }
   // Step 5:  Respond to the Request (redirect if data has been changed)
-  res.redirect(`/dreams/${dream._id}`)
+  res.redirect(`/dreams/details/${dream._id}`)
 }
 
 const deleteNote = (req, res, next) => {
@@ -26,7 +26,7 @@ const deleteNote = (req, res, next) => {
     dream
       .save()
       .then(function () {
-        res.redirect(`/dreams/${dream._id}`)
+        res.redirect(`/dreams/details/${dream._id}`)
       })
       .catch(function (err) {
         return next(err)

@@ -26,14 +26,14 @@
 "Could never be me. What's your idea for this one?"
 "I don't really know yet."
 
-DREAMING exists for the Dreamer that wakes up and wants to record their ideas...their dreams...their fantasies. Whatever, we're not here to judge.
+DREAMING exists for the Dreamer that wakes up and wants to record their ideas...their dreams...their fantasies. Whatever! We're not here to judge.
 
-Open the DREAMING home page and you'll immediately see the "I JUST WOKE UP" button. Click that, and it immediately takes you to a blank oage where you can word vomit whatever you want. A dream you just woke up from, an idea for an app you just had, poetry or just to write a little bit every day.
-Upon completion, input the date and time at the bottom. With a DREAMING profile, you will be be taken to your Dreams page. This contatins all the dreams you've typed out, organized by Time. Make some typos? Wanna shift things around? Edit each journal entry! Not feeling one anymore and it's cluttering up your space? Delete it!
+Open the DREAMING home page and right away you'll see the "I JUST WOKE UP" button. Click that, and it immediately takes you to a blank oage where you can word vomit whatever you want. A dream you just woke up from, an idea for an app you just had, a new poem or just to write a little bit every day.
+Upon completion, select the type of dream from the five different types in the dream scale (Normal, Day, Lucid, False Awakening, and Nightmare), and input the date and time at the bottom. With a DREAMING profile, you will be be taken to your Dreams page. This contatins all the dreams you've typed out, organized by Time. Make some typos? Wanna shift things around? Edit each journal entry! Not feeling one anymore and it's cluttering up your space? Delete it!
 You don't even have to be logged in to input your word vomit. Click the "I JUST WOKE UP" button from the home page and let it all come out! Just be sure to log in after so that it can be saved.
 Incase inspiration strikes at any moment, the "I JUST WOKE UP" button will be available on every page, waiting to lead you to your destiny.
 
-Be on the lookout for the BEDTIME update. Input the time you are planning on going to sleep, and we will alert you an hour before to get off your phone! Preserve a good nights dream with a clear head and be notified to stop looking at your screen!
+Be on the lookout for the BEDTIME update. Input the time you are planning on going to sleep, and we will alert you an hour before that to get off your phone! Preserve a good nights dream with a clear head and be notified to stop looking at your screen!
 This will happen whenever Cody learns how to do it.
 
 ---
@@ -86,6 +86,10 @@ This will happen whenever Cody learns how to do it.
 [FIGMA](www.figma.com)
 
 Images:
+
+[carolineeleanor.com](http://www.carolineeleanor.com/)
+
+[freepik.com](https://www.freepik.com/free-vector/cloudy-night-sky-with-stars-watercolor-background_15316960.htm)
 
 [Markdown Guide](https://ia.net/writer/support/general/markdown-guide)
 

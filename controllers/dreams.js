@@ -3,7 +3,7 @@ const User = require('../models/user')
 
 const index = async (req, res) => {
   const dreams = await Dream.find({})
-  res.render('dreams/index', { title: 'Dream DB', dreams })
+  res.render('dreams/show', { title: 'Dream DB', dreams })
 }
 
 const newDream = (req, res) => {

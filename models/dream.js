@@ -20,7 +20,13 @@ const dreamSchema = new Schema(
     date: Date,
     scale: {
       type: String,
-      enum: ['Normal', 'Day', 'Lucid', 'False Awakening', 'Nightmare']
+      enum: [
+        'Normal Night',
+        'Day Dream',
+        'Lucid Dream',
+        'False Awakening',
+        'Nightmare'
+      ]
     },
     notes: [noteSchema]
   },

@@ -3,19 +3,31 @@
   <section id="dreamPage">
     <div class="dreamLayout">
       <div class="showHeader">
-        <div>
+
+        <%= dream.date %>
+          ||
           <%= dream.scale %>
-        </div> | <div>
-          <%= dream.date %>
-        </div>
+
       </div>
       <br>
       <div>
         <%= dream.content %>
       </div>
       <br>
-      <input name="content" id="noteInput" type="text" method="POST"
-        action="/dreams/details/<% dream._id %>"><button>Notate</button>
+      <% dream.notes.forEach(function(d) { %>
+        <tr>
+          <td>
+            <%= d.content %>
+          </td>
+          <% }) %>
+            <td>
+              <form action="/notes/details/<%= dream._id %>?_method=DELETE" method="POST"><button
+                  type="submit">X</button></form>
+            </td>
+            <form method="POST" action="/notes/details/<%= dream._id %>">
+              <input name="content" id="noteInput" type="text"><button>Notate</button>
+            </form>
+        </tr>
     </div>
   </section>
 

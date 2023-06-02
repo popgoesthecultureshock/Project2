@@ -1,12 +1,20 @@
 body {
   font-family: 'Tsukimi Rounded', sans-serif;
+  background-image: url('../images/StarryCloudyBgEDITED.jpeg');
+  background-size: 100%;
+  background-repeat: none;
+  background-attachment: fixed;
+  /* background-image: url('../images/BG.png');
+  background-size:120vmin;
+  background-position: 50% 10%; */
   grid-template-areas: 
   "nav"
   "main"
 }
 
 a {
-  color: #ffffff;
+  mix-blend-mode: difference;
+  color:#fff;
 }
 
 body > nav {
@@ -14,7 +22,7 @@ body > nav {
   grid-area: nav;
   background-image: url('../images/StarryCloudyBG.jpeg');
   background-color: grey;
-  background-position: center;
+  /* background-position: center; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +34,8 @@ nav > a {
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
+  mix-blend-mode: difference;
+  color:#fff;
 }
 
 nav > a:hover:not(.active) {
@@ -41,6 +51,8 @@ nav > a.active {
 #dreamingText {
   display: flex;
   font-family: 'Tsukimi Rounded', sans-serif;
+  mix-blend-mode: difference;
+  color:#fff;
   flex-direction: row;
   font-size: 3vmin;
   justify-content: space-between;
@@ -49,18 +61,19 @@ nav > a.active {
 
 .tallest {
   transform: scaleY(4);
-  margin-top: 14px;
+  margin-top: 16px;
 }
 .taller {
   transform: scaleY(3);
-  margin-top: 10px;
+  margin-top: 12px;
 }
 .tall {
   transform: scaleY(2);
-  margin-top: 4px;
+  margin-top: 6px;
 }
 .normal {
-  margin-top: -7px;
+  transform: scaleY(1.5);
+  margin-top: 1px;
 }
 
 #actualButton {
@@ -73,6 +86,8 @@ nav > a.active {
   padding: 5vmin 12vmin;
   font-family: 'Tsukimi Rounded', sans-serif;
   font-size: 3vmin;
+  mix-blend-mode: difference;
+  color:#2b2a2a;
 }
 
 .homeButton {
@@ -82,6 +97,8 @@ nav > a.active {
   text-align: center;
   text-decoration: none;
   padding-top: 15vmin;
+  mix-blend-mode: difference;
+  color:#2b2a2a;
 }
 
 #add-dream-form {
@@ -93,18 +110,41 @@ nav > a.active {
 
 #dreamInput {
   font-family: 'Tsukimi Rounded', sans-serif;
+  height: 20vmin;
+  width: 40vmin;
+  mix-blend-mode: difference;
+  color:#000000;
+}
+
+button {
+  font-family: 'Tsukimi Rounded', sans-serif;
+  mix-blend-mode: difference;
+  color:#2b2a2a;
+}
+button :hover{
+  background-image: url('../images/StarryCloudyBG.jpeg');
+  color: white;
 }
 
 #addButton {
   font-family: 'Tsukimi Rounded', sans-serif;
+  mix-blend-mode: difference;
+  color:#2b2a2a;
 }
-
 #addDate {
   font-family: 'Tsukimi Rounded', sans-serif;
+  mix-blend-mode: difference;
+  color:#2b2a2a;
+}
+#go {
+  mix-blend-mode: difference;
+  color:#fff;
 }
 
 #dreamScale {
   font-family: 'Tsukimi Rounded', sans-serif;
+  mix-blend-mode: difference;
+  color:#2b2a2a;
 }
 
 .name {
@@ -112,6 +152,8 @@ nav > a.active {
   align-items: center;
   justify-content: center;
   text-align: center;
+  mix-blend-mode: difference;
+  color:#fff;
 }
 
 .profileHeader {
@@ -120,6 +162,7 @@ nav > a.active {
   justify-content: space-evenly;
   text-align: center;
   padding-top: 0px;
+  
 }
 
 .dreamsTable {
@@ -127,13 +170,18 @@ nav > a.active {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  mix-blend-mode: difference;
+  color:#fff;
+
 }
 
 #profileDreams {
   display: flex;
   justify-content: space-around;
   font-size: 2vmin;
-  letter-spacing: 5vmin;
+  letter-spacing: 7vmin;
+  mix-blend-mode: difference;
+  color:#fff;
 }
 
 .showHeader {
@@ -141,6 +189,8 @@ nav > a.active {
   align-items: center;
   justify-content: space-evenly;
   padding-top: 5vmin;
+  mix-blend-mode: difference;
+  color:#fff;
 }
 
 .dreamLayout {
@@ -149,4 +199,8 @@ nav > a.active {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  mix-blend-mode: difference;
+  color:#fff;
 }
+
+/* I got the inverted color feature from reading this site: https://www.sitepoint.com/community/t/invert-color-text/365494/5 */
